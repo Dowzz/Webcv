@@ -15,9 +15,16 @@ $('#hideVid').click(function(){
     //videoBox.style.display="none";
 })
 
+$(function(){
+    $("#informatique").click(function(e){
+        e.preventDefault();
+        $(".content").load("experiences.html");
+    })
+})
 
 });
-$('.content').load("experience.html");
+
+
 
 
 
