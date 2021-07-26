@@ -14,6 +14,7 @@ body {
 #header {
   background-color: $TextColor;
   display: flex;
+  color: $subColor;
   justify-content: center;
   border-radius: 20px;
   border: 8px double $main-Color;
@@ -23,6 +24,7 @@ body {
   justify-content: center;
 }
 .vidButton {
+  color: $subColor;
   display: inline-block;
   background-color: $TextColor;
   border-radius: 20px;
@@ -38,6 +40,26 @@ body {
   width: 250px;
 }
 #videoBox {
+  display: flex;
+  justify-content: center;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  float: left;
+  display: inline;
+  background-color: $TextColor;
+  border: 8px double $main-Color;
+  border-radius: 20px;
+}
+
+a {
+  display: block;
+  padding: 8px;
+  color: $subColor;
+}
+.menu {
   display: flex;
   justify-content: center;
 }

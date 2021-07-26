@@ -9,6 +9,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  color: #ddbc95;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -26,6 +27,7 @@ body {
 }
 
 .vidButton {
+  color: #ddbc95;
   display: inline-block;
   background-color: #b38867;
   border-radius: 20px;
@@ -43,6 +45,33 @@ body {
 }
 
 #videoBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  float: left;
+  display: inline;
+  background-color: #b38867;
+  border: 8px double #626d71;
+  border-radius: 20px;
+}
+
+a {
+  display: block;
+  padding: 8px;
+  color: #ddbc95;
+}
+
+.menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
