@@ -91,6 +91,8 @@ p,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  left: -2.5em;
 }
 
 .infos {
@@ -111,6 +113,8 @@ p,
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+  left: -2.5em;
 }
 
 #footer {

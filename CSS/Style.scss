@@ -88,6 +88,8 @@ p,
 }
 .niveau {
   display: flex;
+  position: relative;
+  left: -2.5em;
 }
 .infos {
   font-size: 2;
@@ -102,6 +104,8 @@ p,
 }
 #level {
   justify-content: center;
+  position: relative;
+  left: -2.5em;
 }
 #footer {
   border-radius: 20px;
