@@ -1,18 +1,16 @@
-const videoBox = document.getElementById("videoBox");
-const showVid = document.getElementById('showVid');
-const hideVid = document.getElementById('hideVid');
+var boiteVideo = document.getElementById("boiteVideo");
+var showVid = document.getElementById('showVid');
+var hideVid = document.getElementById('hideVid');
 $(() =>{
 
     window.addEventListener('load', function(){
-        videoBox.style.display="none";
+        boiteVideo.style.display="none";
     })
 $('#showVid').click(function(){
-    $('#videoBox').fadeIn(400);
-    //videoBox.style.display="block";
+    $('#boiteVideo').fadeIn(400);
 })
 $('#hideVid').click(function(){
-    $('#videoBox').fadeOut(400);
-    //videoBox.style.display="none";
+    $('#boiteVideo').fadeOut(400);
 })
 
 

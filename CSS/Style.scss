@@ -17,7 +17,7 @@ body {
 
 #header,
 #videoButton,
-#videoBox,
+#boiteVideo,
 .menu,
 .container,
 .point,
@@ -129,6 +129,8 @@ p,
 .diplomes {
   position: relative;
   left: -2.5em;
+}
+@media (max-width: 1130px) {
 }
 @media (max-width: 768px) {
   #presentation {
