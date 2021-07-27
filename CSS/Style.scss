@@ -91,12 +91,31 @@ p,
   font-size: 2;
 }
 #gauche {
+  display: flex;
+  justify-content: center;
   float: left;
-  width: 60%;
+  width: 50%;
 }
 #droite {
   overflow: auto;
 }
 #level {
+  justify-content: center;
+}
+#footer {
+  border-radius: 20px;
+  background: $TextColor;
+  bottom: 0;
+  border: 8px double $main-Color;
+  font-size: 20px;
+}
+#creation {
+  text-align: center;
+}
+.content {
+  width: auto;
+}
+.container {
+  display: flex;
   justify-content: center;
 }

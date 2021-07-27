@@ -100,8 +100,14 @@ p,
 }
 
 #gauche {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   float: left;
-  width: 60%;
+  width: 50%;
 }
 
 #droite {
@@ -109,6 +115,31 @@ p,
 }
 
 #level {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#footer {
+  border-radius: 20px;
+  background: #b38867;
+  bottom: 0;
+  border: 8px double #626d71;
+  font-size: 20px;
+}
+
+#creation {
+  text-align: center;
+}
+
+.content {
+  width: auto;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
