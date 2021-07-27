@@ -18,7 +18,10 @@ body {
 #header,
 #videoButton,
 #videoBox,
-.menu {
+.menu,
+.container,
+.point,
+#gauche {
   display: flex;
   justify-content: center;
 }
@@ -73,8 +76,6 @@ a {
 }
 .point {
   color: black;
-  justify-content: center;
-  display: flex;
 }
 li,
 .diplomes,
@@ -91,8 +92,6 @@ p,
   font-size: 2;
 }
 #gauche {
-  display: flex;
-  justify-content: center;
   float: left;
   width: 50%;
 }
@@ -108,6 +107,7 @@ p,
   bottom: 0;
   border: 8px double $main-Color;
   font-size: 20px;
+  color: $subColor;
 }
 #creation {
   text-align: center;
@@ -115,7 +115,6 @@ p,
 .content {
   width: auto;
 }
-.container {
-  display: flex;
-  justify-content: center;
+#titre {
+  padding: 20px;
 }

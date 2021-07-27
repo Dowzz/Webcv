@@ -11,7 +11,10 @@ body {
 #header,
 #videoButton,
 #videoBox,
-.menu {
+.menu,
+.container,
+.point,
+#gauche {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,12 +75,6 @@ a {
 
 .point {
   color: black;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 li,
@@ -100,12 +97,6 @@ p,
 }
 
 #gauche {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   float: left;
   width: 50%;
 }
@@ -126,6 +117,7 @@ p,
   bottom: 0;
   border: 8px double #626d71;
   font-size: 20px;
+  color: #ddbc95;
 }
 
 #creation {
@@ -136,12 +128,7 @@ p,
   width: auto;
 }
 
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+#titre {
+  padding: 20px;
 }
 /*# sourceMappingURL=Style.css.map */
