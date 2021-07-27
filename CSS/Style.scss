@@ -41,8 +41,8 @@ body {
   display: inline-block;
   text-align: center;
   font-size: 18px;
-  width: 200px;
-  height: 50px;
+  width: fit-content;
+  height: fit-content;
   cursor: pointer;
 }
 
@@ -129,4 +129,22 @@ p,
 .diplomes {
   position: relative;
   left: -2.5em;
+}
+@media (max-width: 768px) {
+  #presentation {
+    width: 600px;
+    height: 400px;
+  }
+}
+@media (max-width: 610px) {
+  #presentation {
+    width: 400px;
+    height: 200px;
+  }
+}
+@media (max-width: 340px) {
+  #presentation {
+    width: 200px;
+    height: 150px;
+  }
 }
