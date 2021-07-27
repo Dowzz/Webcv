@@ -4,6 +4,10 @@ body {
   background-color: #626d71;
 }
 
+#header {
+  padding: 20px;
+}
+
 #header,
 #videoButton,
 #videoBox,
@@ -18,7 +22,7 @@ body {
 
 #header,
 .vidButton,
-li,
+.partie,
 #titre {
   background-color: #b38867;
   color: #ddbc95;
@@ -36,7 +40,7 @@ li,
 }
 
 .vidButton:hover,
-li:hover {
+.partie:hover {
   background-color: #ddbc95;
   border-radius: 30px;
 }
@@ -45,7 +49,7 @@ ul {
   list-style-type: none;
 }
 
-li {
+.partie {
   float: left;
   display: inline;
 }
@@ -56,8 +60,57 @@ a {
   color: #ddbc95;
 }
 
-#titre {
-  text-align: center;
-  font-size: 25px;
+.contenu {
+  background-color: #b38867;
+  border: 8px double #626d71;
+  color: #ddbc95;
+  font-style: italic;
+  border-radius: 20px;
+  padding: 20px;
+  height: 400px;
+}
+
+.point {
+  color: black;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+li,
+.diplomes,
+p,
+.address {
+  color: #626d71;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.niveau {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.infos {
+  font-size: 2;
+}
+
+#gauche {
+  float: left;
+  width: 60%;
+}
+
+#droite {
+  overflow: auto;
+}
+
+#level {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=Style.css.map */

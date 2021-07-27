@@ -11,6 +11,9 @@ body {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   background-color: $main-Color;
 }
+#header {
+  padding: 20px;
+}
 
 #header,
 #videoButton,
@@ -22,7 +25,7 @@ body {
 
 #header,
 .vidButton,
-li,
+.partie,
 #titre {
   background-color: $TextColor;
   color: $subColor;
@@ -40,7 +43,7 @@ li,
 }
 
 .vidButton:hover,
-li:hover {
+.partie:hover {
   background-color: $subColor;
   border-radius: 30px;
 }
@@ -49,7 +52,7 @@ ul {
   list-style-type: none;
 }
 
-li {
+.partie {
   float: left;
   display: inline;
 }
@@ -59,8 +62,41 @@ a {
   padding: 8px;
   color: $subColor;
 }
-
-#titre {
-  text-align: center;
-  font-size: 25px;
+.contenu {
+  background-color: $TextColor;
+  border: 8px double $main-Color;
+  color: $subColor;
+  font-style: italic;
+  border-radius: 20px;
+  padding: 20px;
+  height: 400px;
+}
+.point {
+  color: black;
+  justify-content: center;
+  display: flex;
+}
+li,
+.diplomes,
+p,
+.address {
+  color: $main-Color;
+  line-height: 1.5;
+  text-decoration: none;
+}
+.niveau {
+  display: flex;
+}
+.infos {
+  font-size: 2;
+}
+#gauche {
+  float: left;
+  width: 60%;
+}
+#droite {
+  overflow: auto;
+}
+#level {
+  justify-content: center;
 }
