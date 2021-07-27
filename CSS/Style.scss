@@ -91,12 +91,13 @@ p,
 }
 .infos {
   font-size: 2;
+  color: $subColor;
 }
-#gauche {
+.gauche {
   float: left;
   width: 50%;
 }
-#droite {
+.droite {
   overflow: auto;
 }
 #level {
@@ -118,4 +119,10 @@ p,
 }
 #titre {
   padding: 20px;
+}
+.partie,
+.puces,
+.diplomes {
+  position: relative;
+  left: -2.5em;
 }

@@ -95,14 +95,15 @@ p,
 
 .infos {
   font-size: 2;
+  color: #ddbc95;
 }
 
-#gauche {
+.gauche {
   float: left;
   width: 50%;
 }
 
-#droite {
+.droite {
   overflow: auto;
 }
 
@@ -131,5 +132,12 @@ p,
 
 #titre {
   padding: 20px;
+}
+
+.partie,
+.puces,
+.diplomes {
+  position: relative;
+  left: -2.5em;
 }
 /*# sourceMappingURL=Style.css.map */
