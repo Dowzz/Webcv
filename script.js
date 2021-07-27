@@ -15,10 +15,12 @@ $('#hideVid').click(function(){
     //videoBox.style.display="none";
 })
 
+
 $(function(){
-    $("#informatique").click(function(e){
+    $(document.getElementsByTagName("a")).click(function(e){
+        liens = this.id;
         e.preventDefault();
-        $(".content").load("experiences.html");
+        $(".content").load("pages/"+liens+".html");
     })
 })
 

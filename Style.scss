@@ -63,3 +63,11 @@ a {
   display: flex;
   justify-content: center;
 }
+#titre {
+  color: $subColor;
+  background-color: $TextColor;
+  border-radius: 20px;
+  border: 8px double $main-Color;
+  text-align: center;
+  font-size: 25px;
+}

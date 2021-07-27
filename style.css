@@ -79,4 +79,13 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
 }
+
+#titre {
+  color: #ddbc95;
+  background-color: #b38867;
+  border-radius: 20px;
+  border: 8px double #626d71;
+  text-align: center;
+  font-size: 25px;
+}
 /*# sourceMappingURL=Style.css.map */
