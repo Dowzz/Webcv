@@ -4,73 +4,9 @@ body {
   background-color: #626d71;
 }
 
-#header {
-  background-color: #b38867;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: #ddbc95;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-radius: 20px;
-  border: 8px double #626d71;
-}
-
-#videoButton {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.vidButton {
-  color: #ddbc95;
-  display: inline-block;
-  background-color: #b38867;
-  border-radius: 20px;
-  border: 8px double #626d71;
-  text-align: center;
-  font-size: 18px;
-  width: 200px;
-  height: 50px;
-  cursor: pointer;
-}
-
-.vidButton:hover {
-  background-color: #ddbc95;
-  width: 250px;
-}
-
-#videoBox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-ul {
-  list-style-type: none;
-}
-
-li {
-  float: left;
-  display: inline;
-  background-color: #b38867;
-  border: 8px double #626d71;
-  border-radius: 20px;
-}
-
-a {
-  display: block;
-  padding: 8px;
-  color: #ddbc95;
-}
-
+#header,
+#videoButton,
+#videoBox,
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -80,11 +16,47 @@ a {
           justify-content: center;
 }
 
+#header,
+.vidButton,
+li,
 #titre {
-  color: #ddbc95;
   background-color: #b38867;
-  border-radius: 20px;
+  color: #ddbc95;
   border: 8px double #626d71;
+  border-radius: 20px;
+}
+
+.vidButton {
+  display: inline-block;
+  text-align: center;
+  font-size: 18px;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.vidButton:hover,
+li:hover {
+  background-color: #ddbc95;
+  border-radius: 30px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  float: left;
+  display: inline;
+}
+
+a {
+  display: block;
+  padding: 8px;
+  color: #ddbc95;
+}
+
+#titre {
   text-align: center;
   font-size: 25px;
 }
