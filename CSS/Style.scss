@@ -130,6 +130,12 @@ p,
   position: relative;
   left: -2.5em;
 }
+.link {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  left: -0.5em;
+}
 @media (max-width: 1130px) {
 }
 @media (max-width: 768px) {
