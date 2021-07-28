@@ -27,7 +27,7 @@ $(function(){
     })
 })
 });
-function myFunction() {
+function toggleMenu() {
     var x = document.getElementById("myLinks");
     console.log(x);
     if (x.style.display === "block") {
