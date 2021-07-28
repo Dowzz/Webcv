@@ -173,6 +173,12 @@ p,
 }
 
 @media (max-width: 1250px) {
+  .content {
+    width: 100%;
+  }
+  .contenu {
+    width: 100%;
+  }
   #navmenu {
     display: none;
   }

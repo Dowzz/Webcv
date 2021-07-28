@@ -18,7 +18,11 @@ $(function(){
         url=(this.href);
         $.get(url, function(data) {
             $('.content').html(data);
-            myFunction();
+            if (window.matchMedia("(max-width: 1250px)").matches) {
+                document.getElementById('check')
+                .dispatchEvent(new MouseEvent('click', {shiftKey: true}));
+                
+            }
         })
     })
 })
