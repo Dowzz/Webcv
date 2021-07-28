@@ -9,6 +9,7 @@
 </head>
 <header>
     <div id="header">
+        <a id="nav_hamburger_icon" href="javascript:void(0);" onclick="showResponsiveMenu()"></a>
         <h1>Michel Barny, 39 ans, Futur Developpeur Web et Web Mobile</h1>
     </div>
     <div id = "videoButton">
@@ -20,15 +21,32 @@
 </header>
 <body>
     <div class="menu">
-        <nav>
+        <nav role="navigation" id="navmenu">
+                <a href="Pages/accueil.html" class="titre_Partie partie">Accueil</a>
+                <a href="Pages/contact.html" class="titre_Partie partie"> Contactez moi !</a>
+                <a href="Pages/experiences.html" class="titre_Partie partie">Experiences Professionnelles</a>
+                <a href="Pages/formations.html" class="titre_Partie partie">Formations</a>
+                <a href="Pages/informatique.html" class="titre_Partie partie">Connaissances informatiques</a>
+                <a href="Pages/interets.html" class="titre_Partie partie">Centres d'interets</a>
+                <a href="Pages/langues.html" class="titre_Partie partie">Langues</a>        
+        </nav>
+        <nav role="navigation" id="navmenu_reponsive">
             <ul>
-                <li class="partie"><a class="titre_Partie" href="" id="contact"> Contactez moi !</a></li>
-                <li class="partie"><a class="titre_Partie" href="" id="experiences" >Experiences Professionnelles</a></li>
-                <li class="partie"><a class="titre_Partie" href="" id="formations" >Formations</a></li>
-                <li class="partie"><a class="titre_Partie" href="" id="informatique" >Connaissances informatiques</a></li>
-                <li class="partie"><a class="titre_Partie" href="" id="interets" >Centres d'interets</a></li>
-                <li class="partie"><a class="titre_Partie" href="" id="langues" >Langues</a></li>          
-        </ul>
+                <li><a href="Pages/accueil.html" class="titre_Partie partie">Accueil</a></li>
+                <li><a href="Pages/contact.html" class="titre_Partie partie"> Contactez moi !</a></li>
+                <li><a href="Pages/experiences.html" class="titre_Partie partie">Experiences Professionnelles</a></li>
+                <li><a href="Pages/formations.html" class="titre_Partie partie">Formations</a></li>
+                <li><a href="Pages/informatique.html" class="titre_Partie partie">Connaissances informatiques</a></li>
+                <li><a href="Pages/interets.html" class="titre_Partie partie">Centres d'interets</a></li>
+                <li><a href="Pages/langues.html" class="titre_Partie partie">Langues</a></li>
+            </ul>
+            
+            
+            
+            
+           
+           
+            
         </nav>
     </div>
     <div class="container">

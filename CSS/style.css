@@ -8,6 +8,10 @@ body {
   padding: 20px;
 }
 
+#navmenu_reponsive {
+  display: none;
+}
+
 #header,
 #videoButton,
 #boiteVideo,
@@ -60,6 +64,10 @@ ul {
 .partie {
   float: left;
   display: inline;
+}
+
+.titre_Partie:hover {
+  color: #626d71;
 }
 
 a {
@@ -156,6 +164,12 @@ p,
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (max-width: 1130px) {
+  #navmenu {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
