@@ -12,13 +12,13 @@ $('#showVid').click(function(){
 $('#hideVid').click(function(){
     $('#boiteVideo').fadeOut(400);
 })
-
-
 $(function(){
-    $(document.getElementsByTagName("a")).click(function(e){
-        liens = this.id;
+    $(document.getElementsByClassName("titre_Partie")).click(function(e){
         e.preventDefault();
-        $(".content").load("pages/"+liens+".html");
+        url=("Pages/"+this.id+".html");
+        $.get(url, function(data) {
+            $('.content').html(data);
+        })
     })
 })
 
