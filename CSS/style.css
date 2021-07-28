@@ -156,8 +156,6 @@ p,
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
-  left: -0.5em;
 }
 
 @media (max-width: 768px) {
