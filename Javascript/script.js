@@ -2,7 +2,6 @@ var boiteVideo = document.getElementById("boiteVideo");
 var showVid = document.getElementById('showVid');
 var hideVid = document.getElementById('hideVid');
 $(() =>{
-
     window.addEventListener('load', function(){
         boiteVideo.style.display="none";
         $('.content').load("Pages/accueil.html")
@@ -19,26 +18,18 @@ $(function(){
         url=(this.href);
         $.get(url, function(data) {
             $('.content').html(data);
+            myFunction();
         })
     })
 })
-function showResponsiveMenu() {
-    var menu = document.getElementById("navmenu_reponsive");
-    var icon = document.getElementById("nav_hamburger_icon");
-    var root = document.getElementById("root");
-    if (menu.className === "") {
-        menu.className = "open";
-        icon.className = "open";
-        root.style.overflowY = "hidden";
-    } else {
-        menu.className = "";                    
-        icon.className = "";
-        root.style.overflowY = "";
-    }
-}
 });
-
-
-
-
+function myFunction() {
+    var x = document.getElementById("myLinks");
+    console.log(x);
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
 

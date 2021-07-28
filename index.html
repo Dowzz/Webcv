@@ -9,7 +9,6 @@
 </head>
 <header>
     <div id="header">
-        <a id="nav_hamburger_icon" href="javascript:void(0);" onclick="showResponsiveMenu()"></a>
         <h1>Michel Barny, 39 ans, Futur Developpeur Web et Web Mobile</h1>
     </div>
     <div id = "videoButton">
@@ -17,6 +16,14 @@
     </div>
     <div id="boiteVideo">
     <video src="Videos/fast.mp4" type="video/mp4" width="700" height="400" id="presentation" controls></video>
+    </div>
+    <div class="responsive">  
+        <label for="check">
+            <input type="checkbox" id="check" onclick="myFunction()"/> 
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
     </div>
 </header>
 <body>
@@ -30,25 +37,17 @@
                 <a href="Pages/interets.html" class="titre_Partie partie">Centres d'interets</a>
                 <a href="Pages/langues.html" class="titre_Partie partie">Langues</a>        
         </nav>
-        <nav role="navigation" id="navmenu_reponsive">
-            <ul>
-                <li><a href="Pages/accueil.html" class="titre_Partie partie">Accueil</a></li>
-                <li><a href="Pages/contact.html" class="titre_Partie partie"> Contactez moi !</a></li>
-                <li><a href="Pages/experiences.html" class="titre_Partie partie">Experiences Professionnelles</a></li>
-                <li><a href="Pages/formations.html" class="titre_Partie partie">Formations</a></li>
-                <li><a href="Pages/informatique.html" class="titre_Partie partie">Connaissances informatiques</a></li>
-                <li><a href="Pages/interets.html" class="titre_Partie partie">Centres d'interets</a></li>
-                <li><a href="Pages/langues.html" class="titre_Partie partie">Langues</a></li>
-            </ul>
-            
-            
-            
-            
-           
-           
-            
-        </nav>
     </div>
+        <div id="myLinks">      
+            <a href="Pages/accueil.html" class="titre_Partie partie2">Accueil</a>
+            <a href="Pages/contact.html" class="titre_Partie partie2"> Contactez moi !</a>
+            <a href="Pages/experiences.html" class="titre_Partie partie2">Experiences Professionnelles</a>
+            <a href="Pages/formations.html" class="titre_Partie partie2">Formations</a>
+            <a href="Pages/informatique.html" class="titre_Partie partie2">Connaissances informatiques</a>
+            <a href="Pages/interets.html" class="titre_Partie partie2">Centres d'interets</a>
+            <a href="Pages/langues.html" class="titre_Partie partie2">Langues</a>     
+        </div>
+    
     <div class="container">
         <div class="content"></div>
     </div>

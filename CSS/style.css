@@ -2,13 +2,18 @@
 body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   background-color: #626d71;
+  width: auto;
 }
 
 #header {
   padding: 20px;
 }
 
-#navmenu_reponsive {
+.responsive {
+  display: none;
+}
+
+#myLinks {
   display: none;
 }
 
@@ -31,7 +36,8 @@ body {
 #header,
 .vidButton,
 .partie,
-#titre {
+#titre,
+.partie2 {
   background-color: #b38867;
   color: #ddbc95;
   border: 8px double #626d71;
@@ -166,9 +172,24 @@ p,
           justify-content: center;
 }
 
-@media (max-width: 1130px) {
+@media (max-width: 1250px) {
   #navmenu {
     display: none;
+  }
+  .responsive {
+    display: inline;
+  }
+  .ham {
+    position: fixed;
+    z-index: 100;
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+  }
+  #myLinks {
+    position: fixed;
+    z-index: 99;
   }
 }
 
@@ -191,5 +212,64 @@ p,
     width: 200px;
     height: 150px;
   }
+}
+
+label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70px;
+  cursor: pointer;
+}
+
+label span {
+  background: #fff;
+  border-radius: 10px;
+  height: 7px;
+  margin: 7px 0;
+  -webkit-transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+span:nth-of-type(1) {
+  width: 50%;
+}
+
+span:nth-of-type(2) {
+  width: 100%;
+}
+
+span:nth-of-type(3) {
+  width: 75%;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ span:nth-of-type(1) {
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transform: rotatez(45deg) translate(8px, 0px);
+          transform: rotatez(45deg) translate(8px, 0px);
+}
+
+input[type="checkbox"]:checked ~ span:nth-of-type(2) {
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transform: rotatez(-45deg);
+          transform: rotatez(-45deg);
+}
+
+input[type="checkbox"]:checked ~ span:nth-of-type(3) {
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  width: 50%;
+  -webkit-transform: translate(30px, -11px) rotatez(45deg);
+          transform: translate(30px, -11px) rotatez(45deg);
 }
 /*# sourceMappingURL=Style.css.map */
