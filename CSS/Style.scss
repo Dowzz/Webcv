@@ -12,16 +12,10 @@ body {
   background-color: $main-Color;
   width: auto;
 }
-#header {
-  padding: 20px;
-}
-.responsive {
-  display: none;
-}
+.responsive,
 #myLinks {
   display: none;
 }
-
 #header,
 #videoButton,
 #boiteVideo,
@@ -33,18 +27,17 @@ body {
   justify-content: center;
   width: auto;
 }
-
 #header,
 .vidButton,
 .partie,
 #titre,
-.partie2 {
+.contenu,
+#footer {
   background-color: $TextColor;
   color: $subColor;
   border: 8px double $main-Color;
   border-radius: 20px;
 }
-
 .vidButton {
   display: inline-block;
   text-align: center;
@@ -53,49 +46,49 @@ body {
   height: fit-content;
   cursor: pointer;
 }
-
 .vidButton:hover,
 .partie:hover {
   background-color: $subColor;
   border-radius: 30px;
 }
-
+a,
+.contenu {
+  color: $subColor;
+}
+.point,
+.address,
+li,
+.diplomes,
+p,
+.titre_Partie:hover,
+.infos {
+  color: $main-Color;
+}
 ul {
   list-style-type: none;
 }
-
 .partie {
   float: left;
   display: inline;
 }
-.titre_Partie:hover {
-  color: $main-Color;
-}
-
 a {
   display: block;
   padding: 8px;
-  color: $subColor;
+}
+#header,
+.contenu,
+#titre {
+  padding: 20px;
 }
 .contenu {
-  background-color: $TextColor;
-  border: 8px double $main-Color;
-  color: $subColor;
   font-style: italic;
-  border-radius: 20px;
-  padding: 20px;
   height: 400px;
-}
-.point {
-  color: black;
 }
 li,
 .diplomes,
 p,
 .address {
-  color: $main-Color;
   line-height: 1.5;
-  text-decoration: none;
 }
 .niveau {
   display: flex;
@@ -104,7 +97,6 @@ p,
 }
 .infos {
   font-size: 2;
-  color: $main-Color;
 }
 .gauche {
   float: left;
@@ -119,21 +111,14 @@ p,
   left: -2.5em;
 }
 #footer {
-  border-radius: 20px;
-  background: $TextColor;
   bottom: 0;
-  border: 8px double $main-Color;
   font-size: 20px;
-  color: $subColor;
 }
 #creation {
   text-align: center;
 }
 .content {
   width: auto;
-}
-#titre {
-  padding: 20px;
 }
 .partie,
 .puces,
@@ -161,12 +146,14 @@ p,
   .ham {
     position: fixed;
     z-index: 100;
-    transition: transform 0.2s;
   }
   #myLinks {
     position: fixed;
     z-index: 99;
-    //display: none;
+    display: none;
+    background: $TextColor;
+    border-radius: 20px;
+    border: 8px double $main-Color;
   }
 }
 @media (max-width: 768px) {
@@ -195,7 +182,7 @@ label {
 }
 
 label span {
-  background: #fff;
+  background: $subColor;
   border-radius: 10px;
   height: 7px;
   margin: 7px 0;
