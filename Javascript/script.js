@@ -20,8 +20,7 @@ $(function(){
             $('.content').html(data);
             if (window.matchMedia("(max-width: 1250px)").matches) {
                 document.getElementById('check')
-                .dispatchEvent(new MouseEvent('click', {shiftKey: true}));
-                
+                .dispatchEvent(new MouseEvent('click', {shiftKey: true}));   
             }
         })
     })
@@ -29,11 +28,6 @@ $(function(){
 });
 function toggleMenu() {
     var x = document.getElementById("myLinks");
-    console.log(x);
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
+    $(x).fadeToggle();
   }
 
