@@ -6,7 +6,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .bubbles {
@@ -23,7 +23,7 @@ body {
   height: 20px;
   border-radius: 100%;
   bottom: -150px;
-  background: rgba(255, 255, 255, 0.2);
+  background: #ddbc95;
   -webkit-animation: animate 15s infinite linear;
           animation: animate 15s infinite linear;
 }
@@ -148,10 +148,6 @@ body {
   }
 }
 
-#presentation {
-  border-radius: 20px;
-}
-
 .responsive,
 #myLinks {
   display: none;
@@ -159,7 +155,6 @@ body {
 
 #header,
 #videoButton,
-#boiteVideo,
 .menu,
 .container,
 .point,
@@ -229,7 +224,7 @@ ul {
 
 a {
   display: block;
-  padding: 8px;
+  padding: 6px;
 }
 
 #header,
@@ -295,7 +290,6 @@ p,
 .partie,
 .puces,
 .diplomes {
-  position: relative;
   left: -2.5em;
 }
 

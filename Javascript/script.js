@@ -3,7 +3,6 @@ var showVid = document.getElementById('showVid');
 var hideVid = document.getElementById('hideVid');
 $(() =>{
     window.addEventListener('load', function(){
-        boiteVideo.style.display="none";
         $('.content').load("Pages/accueil.html")
     })
 $('#showVid').click(function(){
