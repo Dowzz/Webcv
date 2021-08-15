@@ -4,17 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/add-on.css">
     <title>Creations</title>
 </head>
 <body>
     <h1 id= "titre">Mes Créations</h1>
-    <div class="contenu" style="height: fit-content;">
-        <div  class="point titreProject">Un site pour une association fictive</div>
-        <a href="https://dowzz.github.io/creation-site-web/" target="_blank"><img class="image" src="./Images/association.PNG" alt="asso"></a>  
+    <div class="contenu" style="overflow-y:scroll; overflow-x:hidden; width: auto">
+        <div onclick="toggle(asso)" class="typing point titreProject">Un site pour une association fictive</div>
+        <div class="hidden" style="display: none;" id ="asso"><a href="https://dowzz.github.io/creation-site-web/" target="_blank"><img  class="image" src="./Images/association.PNG" alt="asso"></a> </div>
+         
         <div class="point"><strong>-----------------------------------------------------</strong></div>
-        <div  class="point titreProject">Un jeu javascript de dé a plusieurs</div>
-        <a href="https://dowzz.github.io/JeuxJava/" target="_blank"><img class="image" src="./Images/DiceGame.PNG" alt="dicegame"></a>
+        <div onclick="toggle(dice)" class="typing point titreProject">Un jeu javascript de dé a plusieurs</div>
+        <div class="hidden" style="display: none;" id="dice"> <a href="https://dowzz.github.io/JeuxJava/" target="_blank"><img class="image" src="./Images/DiceGame.PNG" alt="dicegame"></a></div>
         <div class="point"><strong>-----------------------------------------------------</strong></div>
     </div>
 </body>
+<script>
+
+    function toggle(id){
+        console.log(id)
+        $(id).fadeToggle(100)
+
+
+        
+        
+    }
+    
+    
+
+</script>
 </html>

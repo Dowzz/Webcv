@@ -1,0 +1,33 @@
+.typing {
+  display: inline-block;
+  overflow: hidden;
+  letter-spacing: 2px;
+  -webkit-animation: animated-text 5s, 1;
+          animation: animated-text 5s, 1;
+  white-space: nowrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.titreProject {
+  cursor: pointer;
+}
+
+@-webkit-keyframes animated-text {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes animated-text {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=add-on.css.map */

@@ -16,6 +16,26 @@ body {
   padding: 0;
   overflow: auto;
 }
+::-webkit-scrollbar {
+  width: 12px;
+  background: $TextColor;
+  background-color: $subColor;
+  border-radius: 20px;
+  border: 3px solid $main-Color;
+}
+.detract {
+  animation-name: expand;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+@keyframes expand {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
 
 .bubbles {
   position: fixed;
@@ -110,17 +130,9 @@ body {
     border-radius: 100%;
   }
 }
-.titreProject {
-  font-size: 2em;
-  text-decoration: none;
-}
 .responsive,
 #myLinks {
   display: none;
-  margin: 15px;
-  span {
-    margin-left: 15px;
-  }
 }
 #header,
 #videoButton,
@@ -157,7 +169,7 @@ body {
 }
 a,
 .contenu {
-  color: $main-Color;
+  color: $subColor;
 }
 .point,
 .address,
@@ -167,9 +179,6 @@ p,
 .titre_Partie:hover,
 .infos {
   color: $main-Color;
-}
-.point {
-  margin: 20px;
 }
 ul {
   list-style-type: none;
@@ -189,7 +198,7 @@ a {
 }
 .contenu {
   font-style: italic;
-  height: fit-content;
+  height: 400px;
   a {
     color: $main-Color;
   }
@@ -247,11 +256,13 @@ p,
   display: flex;
   justify-content: center;
 }
+.titre_Partie {
+}
 @media (max-width: 1250px) {
   .content {
     width: 100%;
   }
-  .image {
+  .contenu {
     width: 100%;
   }
   #navmenu {
