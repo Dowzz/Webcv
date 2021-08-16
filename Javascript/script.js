@@ -2,9 +2,9 @@ var boiteVideo = document.getElementById("boiteVideo");
 var showVid = document.getElementById('showVid');
 var hideVid = document.getElementById('hideVid');
 $(() =>{
-    window.addEventListener('load', function(){
+    window.onload =function(){
         $('.content').load("Pages/accueil.html")
-    })
+    }
 $(function(){
     $(document.getElementsByClassName("titre_Partie")).click(function(e){
         e.preventDefault();
