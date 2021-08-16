@@ -455,6 +455,11 @@ p,
   .contenu {
     width: 100%;
   }
+  #contenuAccueil {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
   #navmenu {
     display: none;
   }
@@ -478,6 +483,9 @@ p,
   }
   #header {
     height: 130px;
+  }
+  #titre {
+    margin: 0px;
   }
 }
 
