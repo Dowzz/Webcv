@@ -139,6 +139,7 @@ a {
 .contenu,
 #titre {
   padding: 10px;
+  text-align: center;
 }
 #titre {
   text-align-last: center;
@@ -361,6 +362,9 @@ p,
   body {
     overflow: scroll;
   }
+  #portrait {
+    width: 100px;
+  }
   .mot {
     display: flex;
   }
@@ -375,7 +379,7 @@ p,
   }
   .responsive {
     display: flex;
-    margin: 25px;
+    margin: 5px;
   }
   .ham {
     position: fixed;

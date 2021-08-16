@@ -196,6 +196,7 @@ a {
 .contenu,
 #titre {
   padding: 10px;
+  text-align: center;
 }
 
 #titre {
@@ -440,6 +441,9 @@ p,
   body {
     overflow: scroll;
   }
+  #portrait {
+    width: 100px;
+  }
   .mot {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -458,7 +462,7 @@ p,
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 25px;
+    margin: 5px;
   }
   .ham {
     position: fixed;
