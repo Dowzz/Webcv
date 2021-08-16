@@ -119,6 +119,9 @@ ul {
   animation-duration: 1s;
   animation-iteration-count: 1;
 }
+.hidden {
+  display: flex;
+}
 @keyframes extend {
   from {
     background: none;
@@ -142,6 +145,7 @@ a {
   a {
     color: $main-Color;
   }
+  text-align-last: center;
 }
 li,
 .diplomes,
@@ -189,7 +193,7 @@ p,
   justify-content: center;
 }
 .image {
-  width: 100%;
+  width: 50%;
   border-radius: 20px;
 }
 .link {

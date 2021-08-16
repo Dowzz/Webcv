@@ -162,6 +162,12 @@ ul {
           animation-iteration-count: 1;
 }
 
+.hidden {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 @-webkit-keyframes extend {
   from {
     background: none;
@@ -194,6 +200,7 @@ a {
 .contenu {
   font-style: italic;
   height: 400px;
+  text-align-last: center;
 }
 
 .contenu a {
@@ -265,7 +272,7 @@ p,
 }
 
 .image {
-  width: 100%;
+  width: 50%;
   border-radius: 20px;
 }
 
