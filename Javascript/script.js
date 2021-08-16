@@ -21,12 +21,11 @@ $(function(){
 })
 });
 function remove(id){
-    if(id === (document.getElementById(id))){
+    if(id === (document.getElementById(id))){       
         return
     }else{
-        $('.content').removeClass("detract");
+        $('.content').removeClass('detract');
     }
-
 }
 function toggleMenu() {
     var x = document.getElementById("myLinks");
