@@ -359,7 +359,7 @@ p,
 
 @media (max-width: 1250px) {
   body {
-    overflow-y: scroll;
+    overflow: scroll;
   }
   .mot {
     display: flex;
@@ -390,7 +390,7 @@ p,
     border: 8px double $main-Color;
   }
   #header {
-    height: 120px;
+    height: 130px;
   }
 }
 label {
