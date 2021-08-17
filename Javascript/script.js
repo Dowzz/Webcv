@@ -3,7 +3,7 @@ var showVid = document.getElementById('showVid');
 var hideVid = document.getElementById('hideVid');
 $(() =>{
     window.onload =function(){
-        $('.content').load("Pages/accueil.html")
+        $('.content').load("accueil.html")
     }
 $(function(){
     $(document.getElementsByClassName("titre_Partie")).click(function(e){
