@@ -12,7 +12,6 @@ $(function(){
         url=(this.href);
         $.get(url, function(data) {
             $('.content').addClass('detract')
-            console.log(url)
             $('.content').html(data);
             if (window.matchMedia("(max-width: 1250px)").matches) {
                 document.getElementById('check')
