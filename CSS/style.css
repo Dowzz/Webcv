@@ -9,6 +9,10 @@ body {
   overflow: auto;
 }
 
+.titreProject {
+  cursor: pointer;
+}
+
 ::-webkit-scrollbar {
   width: 12px;
   background: #b38867;
@@ -454,7 +458,8 @@ p,
   .contenu {
     width: 100%;
   }
-  #contenuAccueil {
+  #contenuAccueil,
+  #contenuCreation {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;

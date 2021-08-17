@@ -17,6 +17,11 @@ body {
   padding: 0;
   overflow: auto;
 }
+
+.titreProject {
+  cursor: pointer;
+}
+
 ::-webkit-scrollbar {
   width: 12px;
   background: $TextColor;
@@ -373,7 +378,8 @@ p,
   .contenu {
     width: 100%;
   }
-  #contenuAccueil {
+  #contenuAccueil,
+  #contenuCreation {
     height: fit-content;
   }
   #navmenu {
