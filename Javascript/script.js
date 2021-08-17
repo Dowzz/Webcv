@@ -1,10 +1,11 @@
 var boiteVideo = document.getElementById("boiteVideo");
 var showVid = document.getElementById('showVid');
 var hideVid = document.getElementById('hideVid');
+$(window).on("load", function() {
+    $('.content').load("accueil.html");
+  });
 $(() =>{
-    window.onload =function(){
-        $('.content').load("accueil.html")
-    }
+    
 $(function(){
     $(document.getElementsByClassName("titre_Partie")).click(function(e){
         e.preventDefault();
