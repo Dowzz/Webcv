@@ -9,8 +9,9 @@
 <body>
     <h1 id= "titre">Mes Créations</h1>
     <div class="contenu" id="contenuCreation" style="overflow-y:scroll; overflow-x:hidden; width: auto">
+        <h2>Cliquez pour afficher le contenu</h2>
         <div onclick="toggle(asso)" class=" point titreProject">Un site pour une association fictive </div>
-        <div class="hidden" id ="asso">
+        <div id ="asso" style="display: none;">
             <video class="image" autoplay muted>
             <source src="Videos/asso.mp4"
                     type="video/mp4">       
@@ -21,7 +22,7 @@
          
         <div class="point"><strong>--------------------------------------------------</strong></div>
         <div onclick="toggle(dice)" class=" point titreProject">Un jeu javascript de dé a plusieurs </div>
-        <div class="hidden" id="dice"> 
+        <div id="dice" style="display: none;"> 
             <video class="image" autoplay muted>
             <source src="Videos/dice.mp4"
                     type="video/mp4">       
@@ -30,11 +31,22 @@
     <div><a class="color vidButton" href="https://dowzz.github.io/JeuxJava/" target="_blank">Visiter le site</a></div>
     </div>
         <div class="point"><strong>------------------------------------------------</strong></div>
+
+        <div onclick="toggle(wordpress)" class=" point titreProject">Un site crée a partir de Wordpress </div>
+        <div id="wordpress" style="display: none;"> 
+            <video class="image" autoplay muted>
+            <source src="Videos/wordpress.mp4"
+                    type="video/mp4">       
+            Sorry, your browser doesn't support embedded videos.
+        </video>
+    <div><a class="color vidButton" href="https://fantasia-wordpress.freecluster.eu/" target="_blank">Visiter le site</a></div>
+    </div>
+        <div class="point"><strong>------------------------------------------------</strong></div>
     </div>
 </body>
 <script>
-
-    
-
+    function toggle(x){
+        $(x).fadeToggle();
+    }
 </script>
 </html>
